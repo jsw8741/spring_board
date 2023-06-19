@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>상품 데이터 출력</h1>
+	<div>
+		상품명: <span th:text="${itemDto.itemNm}"></span>
+	</div>
+	
+	<div>
+		상세설명: <span th:text="${itemDto.itemDetail}"></span>	
+	</div>
+	
+	<div>
+		가격: <span th:text="${itemDto.price}"></span>
+	</div>
+	
+	<div>
+		현재시간: <span th:text="${itemDto.regTime}"></span>
+	</div>
+</body>
+</html>
