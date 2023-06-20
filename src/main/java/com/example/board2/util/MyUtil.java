@@ -62,7 +62,11 @@ public class MyUtil{
 		}
 		
 		// 3. 다음▶ 버튼 만들기
+		if(totalPage - currentPageSetup > numPerBlock) {
+			sb.append("<a href=\"" + listUrl + "pageNum=" + currentPageSetup + "\">다음▶</a>&nbsp;");
+		}
 		
+		System.out.println(sb.toString());
 		
 		// 4. 버튼 합쳐서 문자열로 리턴
 		return sb.toString();
